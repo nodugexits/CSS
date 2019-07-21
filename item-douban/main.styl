@@ -10,6 +10,7 @@ body
     height 34px
     margin 0 auto 25px
 .logo 
+    float left
     width 160px
     height 34px
     margin-right 20px
@@ -21,6 +22,7 @@ body
         background-repeat no-repeat
         vertical-align middle
 .search-box
+
     position relative
     display inline-block
     width 270px
@@ -43,6 +45,9 @@ body
         font-size 13px
         border 0
         vertical-align middle
+        &::-webkit-input-placeholder     
+            color rgb(194, 193, 193)
+
 .bn 
     position absolute
     top 0
@@ -60,7 +65,7 @@ body
         padding 0
         margin-right 3px
         background transparent  //背景透明
-        
+        cursor pointer   //鼠标箭头变为小手型
 .navigation-bar
     float right
     width 481.406px
