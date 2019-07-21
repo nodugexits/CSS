@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>traffic-lights</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .traffic-light {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 22em;
+            width: 10em;
+            background: #333;
+            border: 0.5em solid #eeeeee;
+            border-radius: 2em;
+            z-index: 10;
+        }
+        .traffic-light::before {
+            content: '';
+            width: 3em;
+            height: 8em;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #eeeeee;
+            background: linear-gradient(rgba(240,240,240,0.9),aquamarine);
+            z-index: 0;
+        }
+        .light {
+            width: 6em;
+            height: 5.5em;
+            border-radius: 50%;
+            background: #000;
+            border: 1px solid #000;
+            margin: 1em auto;
+        }
+        .red {
+            animation: red 10s linear infinite;
+        }
+        .amber {
+            animation: amber 10s linear infinite;
+        }
+        .green {
+            animation: green 10s linear infinite;
+        }
+        @keyframes red {
+            0%{
+                background-color: #000;
+                opacity: 1;
+                }
+
+            2%, 30% {
+                background-color: red;
+                opacity: 1;
+            }
+            32%, 100% {
+                background-color: #000;
+                opacity: 1;
+                }
+        }
+        @keyframes amber {
+            0%,32%{
+                background-color: #000;
+                opacity: 1;
+                }
+
+            34%, 54% {
+                background-color: rgb(255, 115, 0);
+                opacity: 1;
+            }
+            56%, 86% {
+                background-color: #000;
+                opacity: 1;
+                }
+            90%, 100% {
+                background-color: rgb(255, 115, 0);
+                opacity: 1;
+               }
+        }
+        @keyframes green {
+            0%,55%{
+                background-color: #000;
+                opacity: 1;
+                }
+
+            57%, 88% {
+                background-color: green;
+                opacity: 1;
+            }
+            89%, 100% {
+                background-color: #000;
+                opacity: 1;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light amber"></div>
+        <div class="light green"></div>
+    </div>
+</body>
+</html>
