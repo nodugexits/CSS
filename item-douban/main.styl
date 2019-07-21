@@ -1,0 +1,348 @@
+*
+    padding 0
+    margin 0
+body 
+    width 100%
+    height 100%
+    padding-top 30px
+.body-header
+    width 950px
+    height 34px
+    margin 0 auto 25px
+.logo 
+    display inline-block
+    width 160px
+    height 34px
+    margin-right 20px
+    a
+        display inline-block
+        height 34px
+        width 160px
+        background-image url(https://img3.doubanio.com/f/sns/19886d443852bee48de2ed91f4a3bdfdaf8c809c/pics/nav/logo_db.png)
+        background-repeat no-repeat
+        vertical-align middle
+.search-box
+    position relative
+    display inline-block
+    width 270px
+    height 30px
+    border 1px solid #c3c3c3
+    
+.input
+    display inline-block
+    width 270px
+    height 30px
+    vertical-align middle
+    position absolute
+    top 0
+    input
+        outline none
+        width 240px
+        height 20px
+        padding 5px
+        margin-right 3px
+        font-size 13px
+        border 0
+        vertical-align middle
+.bn 
+    position absolute
+    top 0
+    right 0
+    display inline-block   
+    width 30px
+    height 30px
+    background-repeat no-repeat
+    background-position center center  //背景图片居中显示
+    background-image url(https://img3.doubanio.com/f/sns/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png)
+    input
+        width 30px
+        height 30px
+        font-size 0
+        padding 0
+        margin-right 3px
+        background transparent  //背景透明
+        
+.navigation-bar
+    float right
+    width 481.406px
+    height 21px
+    margin-top 6px
+    position absolute
+    top 30px
+    right 199.5px
+    display flex
+    li
+        display inline-block
+        width 40px
+        height 20px
+        margin-left 17px
+        a
+            text-decoration none 
+            font-weight 700
+            font-size 20px
+.reg-new 
+    width 100%
+    height 304px
+    position absolute
+    top 89px
+    background-repeat no-repeat  //图片不铺满
+    background-position calc(50% - 305px) left 
+    background-size contain  //此时会保持图像的纵横比并将图像缩放成将适合背景定位区域的最大大小。
+    background-image url(https://img3.doubanio.com/view/puppy_image/raw/public/16ad990ec23uwn790d4.jpg)
+    background-color #edf4ed
+.wrapper
+    height 304px
+    width 950px
+    margin 0 199.5px 0 199.5px
+    position relative
+    //以下对下载app那个区块样式设计
+.app
+    width 150px
+    height 120px
+    position absolute
+    top 92px
+    right 325px
+.doubanapp:active
+    background #00B51D
+    color #fff 
+.app-title
+    h2
+        font-weight 500
+.app-spacing
+    height 1em
+.doubanapp 
+    display inline-block
+    zoom 1
+    padding 9px 21px
+    margin-right 2px
+    vertical-align top
+    border-radius 2px
+    font-size 12px
+    background #00B51D
+    // background-color transparent
+    color #FFF
+    line-height 1
+    text-decoration none  //去掉a链接自带的下划线
+.app-qrcode
+    position relative
+.smallhover
+    position absolute
+    top -30px
+    left 123px
+    display inline-block
+    width 30px
+    height 30px
+    // background-color #000
+    text-decoration none  //去掉a链接自带的下划线
+    img
+        height 28px
+        display inline-block
+        zoom 1
+        border 1px solid #48aa0d
+        border-radius 2px
+        position absolute
+        top 0px
+        left  0px
+.qr
+    .qrcode 
+        width 160px
+        height 160px
+        position absolute
+        top 0
+        left 0
+        z-index 9
+        max-width none
+        transform scale(0)
+        transform-origin top left 
+        opacity 0
+        border 15px solid #fff
+        border-radius 2px
+        -webkit-transition all .4s ease-in-out
+        -o-transition all .01s ease-in-out
+        transition all .01s ease-in-out
+.smallhover:hover 
+    .qrcode
+        transform scale(1)
+        opacity 1
+.qr
+    span 
+        display inline-block
+        font-size 13px
+        width 190px
+        text-align center
+        background #fff
+        color #666
+        border-bottom 1em
+        position absolute
+        top 190px
+        left  0px
+        z-index 100
+        transform scale(0)
+        opacity 0
+        -webkit-transition all .4s ease-in-out
+        -o-transition all .01s ease-in-out
+        transition all .01s ease-in-out
+.smallhover:hover
+    .qr
+        span 
+            transform scale(1)
+            opacity 1
+
+
+//以下是对表单样式设计
+.form
+    display none
+.show
+    display block
+.login
+    width 300px
+    height 300px
+    // background #000
+    position absolute
+    top 0px
+    right 0px
+
+.login-in-on
+    width 280px
+    height 223.64px
+    position absolute
+    top 38px
+    right 0x
+    margin 30px 10px 10px 10px
+.input-login
+    width 280px
+    height 194.65px
+.login-password
+    width 300px
+    height 300px
+.head
+    height 19px
+    font-size 12px
+    margin-bottom 10px
+    span 
+        color #9b9b9b 
+    .registry
+        text-decoration none
+        color #48aa0d
+.registry-2
+    text-decoration none
+    color #48aa0d
+    padding-left 232px
+.text1
+    outline none/*去掉原本的边框样式*/
+    width 280px
+    height 32px
+    margin-bottom 10px
+    border 1px solid #e4e6e5
+    border-radius 2px
+    // box-shadow 10px 10px 10px red
+    text-indent 1em
+.text2
+    outline none/*去掉原本的边框样式*/
+    width 280px
+    height 32px
+    margin-bottom 10px
+    border 1px solid #e4e6e5
+    border-radius 2px
+    // box-shadow 10px 10px 10px red
+    text-indent 1em
+.gain
+    color #41ac52
+    position absolute
+    right 10px
+    top 80px
+    font-size 13px
+.button
+    outline none/*去掉原本的边框样式*/
+    width 280px
+    height 32px
+    border 1px solid #e4e6e5
+    font-size 15px
+    text-align center
+    background #41ac52
+    color #fff
+    border-radius 4px
+.tail
+    width 280px
+    height 41px
+.tail-sun
+    height 21px
+    width 280px
+    margin-top 10px
+    margin-bottom  10px
+    label 
+        font-size 13px
+        color #335
+    a 
+        color #41ac52
+        position absolute
+        right 0px
+        top 162px
+        font-size 13px
+.third-party
+    width 250px
+    // height 32.64em !important
+    padding-top 11.64px
+    border-top 1px solid #e4e6e5
+    position absolute
+    bottom -0.54px
+    text-align left
+    font-size 11px
+    color #9b9b9b
+.third-party-2w
+    display inline-block
+.wechat
+    display inline-block
+    background-image url('./images/wechat.jpg')
+    vertical-align middle
+    width 22px
+    height 22px
+    background-size 100% 100%
+    font-size 0
+    border-radius 50%
+    margin-left 12px
+.micro-blog
+    display inline-block   
+    background-image url('./images/micro-blog.jpg')  //添加背景图片
+    vertical-align middle   //垂直对齐方式
+    width 22px
+    height 22px
+    background-size 100% 100%    //背景图片不被拉伸,设置宽高
+    font-size 0   //隐藏链接文字
+    border-radius 50%
+    margin-left 12px
+//以下对注册方式A标签样式进行设置
+.login-change
+    height 28px
+    width 280px
+    position absolute
+    top 30px
+    right 10px
+    margin-bottom 10px
+    display flex
+.unclicked
+    width 140px
+    height 26px
+    text-align center
+    color #9b9b9b !important
+    font-size 13px
+    list-style none //去掉ul li 前面的点
+    cursor pointer
+.tab
+    width 140px
+    height 26px
+    text-align center
+    color #000 !important
+    font-weight 700
+    font-size 13px
+    border-bottom 1px solid #000 !important
+    list-style none  
+    cursor pointer
+   
+    
+
+
+
+
+
+

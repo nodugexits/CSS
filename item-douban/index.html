@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豆瓣</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- 豆瓣的头 -->
+    <div class="body-header">
+        <div class="logo">
+            <a href="https://www.douban.com/"></a>
+        </div>
+        <div class="search-box">
+            <div class="input">
+                <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+                <div class="bn">
+                        <input type="submit" value="搜索">
+                    </div>
+            </div>
+        </div>
+        <ul class="navigation-bar">
+            <li>
+                <a href="https://book.douban.com/" class="book" target="_blank" style="color:black">读书</a>
+            </li>
+            <li>
+                <a href="https://movie.douban.com/" class="movie" target="_blank" style="color: rgb(60, 60, 250)">电影</a>
+            </li>
+            <li>
+                <a href="https://music.douban.com/" class="music" target="_blank" style="color:chocolate">音乐</a>   
+            </li>
+            <li>
+                <a href="https://www.douban.com/group/explore" class="group" target="_blank" style="color:rgb(44, 85, 148)">小组</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:58437/#" target="_blank" class="tongcheng" style="color:rgb(210, 57, 30)"> 同城</a>
+            </li>
+            <li>
+                <a href="https://douban.fm/" class="fm" target="_blank" style="color:rgb(62, 182, 238)">FM</a>
+            </li>
+            <li>
+                <a href="https://m.douban.com/time/?dt_time_source=douban-web_anonymous_index_top_nav" class="time" target="_blank" style="color:rgb(12, 12, 12)">时间</a>
+            </li>
+            <li>
+                <a href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web" class="bean" target="_blank" style="color:rgb(7, 112, 51)">豆品</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 豆瓣下载及注册登录 -->
+    <div class="reg-new"> 
+        <div class="wrapper">
+            <div class="app">
+                <div class="app-title">
+                    <h2>豆瓣
+                        <span>6.0</span>
+                    </h2>
+                </div>
+                <div class="app-spacing"></div>
+                <a href="https://www.douban.com/doubanapp/app?channel=nimingye" class="doubanapp">下载豆瓣&nbspAPP</a>
+                <div class="app-qrcode">
+                        <!--小图-->
+                    <a class="smallhover" href="javascript:">
+                        <!--设置初始图片-->
+                        <img src="https://img3.doubanio.com/f/sns/0c708de69ce692883c1310053c5748c538938cb0/pics/sns/anony_home/icon_qrcode_green.png" alt="#" />
+                        <!--大图-->
+                        <div class="qr">
+                            <img  class="qrcode" src="https://img3.doubanio.com/f/sns/1cad523e614ec4ecb6bf91b054436bb79098a958/pics/sns/anony_home/doubanapp_qrcode.png" />
+                            <span>iOS/Android扫码直接下载</span> 
+                        </div>	
+                    </a>             
+                </div>
+            </div>
+            <div class="login">
+                <!-- <img src="#" alt="#"> -->
+                <div class="login-in-on form show">
+                    <div class="head">
+                        <span>登录注册表示同意</span>
+                        <a href="https://accounts.douban.com/passport/agreement" class="registry">豆瓣使用协议、隐私政策</a>
+                    </div>
+                    <div class="input-login">
+                        <input type="text" placeholder="手机号" class="text1">
+                        <input type="text" placeholder="验证码" class="text2">
+                        <a href="#" style="text-decoration: none;" class="gain">获取验证码</a></br>
+                        <input type="button" value="登录豆瓣" class="button"></br>
+                        <div class="tail">
+                            <div class="tail-sun">
+                                <input type="checkbox" checked="checked">
+                                <label>下次自动登录</label>
+                                <a href="#" style="text-decoration: none;" class="not-recrived">收不到验证码</a>    
+                            </div>
+                        </div>
+                        <div class="third-party">
+                            <span>第三方登录:</span>
+                            <div class="third-party-2w">
+                                <a href="https://www.douban.com/accounts/connect/wechat/?from=&amp;redir=https%3A//www.douban.com/" class="wechat" target="_top" title="用微信登录">wechat</a>
+                                <a href="https://www.douban.com/accounts/connect/sina_weibo/?from=&amp;redir=https%3A//www.douban.com/&amp;fallback=" class="micro-blog" target="_top" title="用微博登录">weibo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-in-on form">
+                        <div class="head">
+                                <a href="https://accounts.douban.com/passport/get_password" class="registry-2">找回密码</a>
+                            </div>
+                            <div class="input-login">
+                                <input type="text" placeholder="手机号/邮箱" class="text1">
+                                <input type="text" placeholder="验证码" class="text2">
+                                <input type="button" value="登录豆瓣" class="button"></br>
+                                <div class="tail">
+                                    <div class="tail-sun">
+                                        <input type="checkbox" checked="checked">
+                                        <label>下次自动登录</label>
+                                        <a href="#" style="text-decoration: none;" class="not-recrived">海外手机登录</a>    
+                                    </div>
+                                </div>
+                                <div class="third-party">
+                                    <span>第三方登录:</span>
+                                    <div class="third-party-2w">
+                                        <a href="https://www.douban.com/accounts/connect/wechat/?from=&amp;redir=https%3A//www.douban.com/" class="wechat" target="_top" title="用微信登录">wechat</a>
+                                        <a href="https://www.douban.com/accounts/connect/sina_weibo/?from=&amp;redir=https%3A//www.douban.com/&amp;fallback=" class="micro-blog" target="_top" title="用微博登录">weibo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <!-- <div class="login-in-on">
+                        <a href="https://accounts.douban.com/passport/get_password" class="find-password">找回密码</a>
+                        <div class="input-pw">
+                                <input type="text" placeholder="手机号">
+                                <input type="password" placeholder="密码">
+                                <a href="#" style="text-decoration: none;" class="gain">获取验证码</a>
+                                <input type="button" value="登录豆瓣">
+                                <input type="redio" checked="checked">
+                                <label>下次自动登录</label>    
+                                <a href="#" style="text-decoration: none;" class="abroad-phone">海外手机登录</a>
+                        </div>
+            </div> -->
+            <ul class="login-change">
+                <li class="li-table unclicked tab" href="javascript:;" data-index="0">短信登录/注册</li>
+                <li class="li-table unclicked" href="javascript:;" data-index="1">密码登录</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
