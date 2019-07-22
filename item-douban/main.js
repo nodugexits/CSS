@@ -2,7 +2,9 @@ const login = document.querySelectorAll('.login-in-on');
 // 获取页面
 const tabs = document.querySelectorAll('.li-table');
 // 获取li标签
-const taba = document.querySelectorAll('.not-recrived');
+const taga = document.querySelectorAll('.not-recrived')
+const inpt = document.querySelectorAll('.input-tt')
+
 // console.log(login);
 for(var i=0;i<tabs.length;i++){
     tabs[i].addEventListener('click',function(){
@@ -23,21 +25,12 @@ function showtab(){
     }
 }
 
-for(var k = 0;k < taba.length;k++){
-    taba[k].addEventListener('click',function(){
-        ashow.call(this);
-    })
-}
 
-function ashow(){
-    for(var m = 0;m<login.length;m++)
-    console.log(this);
-    if(taba[m] === this){
-        login[m].classList.remove('show'); 
-    }else{
-        login[m].classList.add('show');
-    }
-}
+
+
+
+
+
 // 第一种方法
 // function showtab(){
 //     console.log(this);

@@ -271,6 +271,16 @@ body {
   border-radius: 2px;
   text-indent: 1em;
 }
+.text3 {
+  outline: none /*去掉原本的边框样式*/;
+  width: 280px;
+  height: 32px;
+  margin-bottom: 10px;
+  border: 1px solid #e4e6e5;
+  border-radius: 2px;
+  text-indent: 1em;
+  display: none;
+}
 .gain {
   color: #41ac52;
   position: absolute;
@@ -309,6 +319,9 @@ body {
   right: 0px;
   top: 162px;
   font-size: 13px;
+}
+.a {
+  display: none;
 }
 .third-party {
   width: 250px;
