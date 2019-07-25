@@ -24,7 +24,9 @@ function showtab(){
         }
     }
 }
-
+for(var m = 0;m < taga.length;m++){
+    
+}
 
 
 

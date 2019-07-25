@@ -11,6 +11,7 @@ body {
   width: 950px;
   height: 34px;
   margin: 0 auto 25px;
+  overflow: hidden;
 }
 .logo {
   float: left;
@@ -79,9 +80,6 @@ body {
   width: 481.406px;
   height: 21px;
   margin-top: 6px;
-  position: absolute;
-  top: 30px;
-  right: 199.5px;
   display: flex;
 }
 .navigation-bar li {
