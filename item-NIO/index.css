@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+li {
+  list-style: none;
+  padding: 10px 20px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+}
+.page-wrapper .header {
+  padding: 15px 40px;
+  height: 70px;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.page-wrapper .header .box-logo {
+  width: 112px;
+  height: 40px;
+  display: inline-block;
+  position: fixed;
+}
+.page-wrapper .header .box-logo .logo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.page-wrapper .header .box-logo .logo img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.page-wrapper .header .box-option {
+  display: inline-block;
+  position: absolute;
+  padding-left: 162px;
+  top: 15px;
+}
+.page-wrapper .header .box-option ul {
+  display: inline-block;
+  padding: 3px 0 0 0;
+}
+.page-wrapper .header .box-option ul .option {
+  display: inline-block;
+  padding: 10px 20px 10px 45px;
+}
+.page-wrapper .header .box-option ul .option .box-car {
+  position: relative;
+}
+.page-wrapper .header .box-option ul .option .box-car .car {
+  display: inline-block;
+  width: 25px;
+}
+.page-wrapper .header .box-option ul .option .box-car span {
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid #000;
+  border-width: 0 1px 1px 0;
+  transform: rotateZ(45deg);
+  transition: transform 0.05s;
+}
+.page-wrapper .header .box-option ul .option .box-car .up {
+  position: absolute;
+  top: 8px;
+  left: -20px;
+  transform: rotateZ(-135deg);
+}
+.page-wrapper .header .box-option ul .option .box-items0 {
+  background: #fff;
+  position: absolute;
+  display: none;
+}
+.page-wrapper .header .box-option ul .option .show {
+  display: block;
+}
+.page-wrapper .header .box-option ul .option .show span {
+  display: inline-block;
+  font-size: 12px;
+}
+.page-wrapper .header .box-option ul .option .show a {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.page-wrapper .header .box-appointment {
+  height: 40px;
+  width: 178px;
+  float: right;
+  box-sizing: border-box;
+  padding: 0 26px;
+}
+.page-wrapper .header .box-appointment .appointment {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  width: 126px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 100px;
+  padding: 0 10px;
+  border: 2px solid #000;
+}
