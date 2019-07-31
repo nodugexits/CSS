@@ -7,7 +7,6 @@ body,html
     background #000
 li
     list-style none
-    padding 10px 20px
 a   
     text-decoration none
     color #000
@@ -20,12 +19,12 @@ a
         background #fff
         box-sizing border-box
         position relative
-
         .box-logo
             width 112px
             height 40px
             display inline-block
             position fixed
+            z-index 1
             .logo
                 display inline-block
                 width 100%
@@ -35,53 +34,255 @@ a
                     background-repeat no-repeat
                     width 100%
                     height 100%
+                
         .box-option
             display inline-block
             position absolute
             padding-left 162px
             top 15px
+            letter-spacing 2px
             ul
                 display inline-block
                 padding 3px 0 0 0
+                .special-option
+                    display inline-block
+                    padding 10px 20px 10px 20px
+                    position relative
+                    //导航栏NIO、formula样式
+                    .nioLife-formula-line
+                        display block
+                        width 100%
+                        height 2px
+                        background #13d4c8
+                        opacity 0
+                        transform translateY(8px)
+                        transition all 0.3s
+                .special-option:hover
+                    .nioLife-formula-line
+                        opacity 1
+                        transform translateY(5px)       
+                .underline   
+                    border-bottom 1px solid #cfcfcf
+                    box-shadow 0 2px 4px 0 rgba(0,0,0,0.1)
+                    border-radius 12px 12px 0 0
                 .option
                     display inline-block
                     padding 10px 20px 10px 45px
+                    position relative
+                    //车
                     .box-car
                         position relative
-                        // overflow auto
                         .car
                             display inline-block
                             width 25px
                         span 
                             display inline-block
                             position absolute
-                            top 4px
+                            top 5px
                             left -20px
                             width 7px
                             height 7px
                             border 1px solid #000
                             border-width 0 1px 1px 0 
                             transform rotateZ(45deg)
-                            transition transform .05s
+                            transition transform .01s
                         .up
                             position absolute
-                            top 8px
+                            top 10px
                             left -20px
                             transform rotateZ(-135deg)
                            
-                    .box-items0
+                    .box-style0
+                        display inline-block
+                        width 90px
+                        border-radius 0 0 12px 12px
                         background #fff
                         position absolute
-                        display none
+                        top 42px
+                        left 0
+                        display none                    
+                        .box-style01
+                            width 90px
+                            border-bottom 1px solid #9b9b9b
+                            .special
+                                color #9b9b9b
+                                font-size 10px
+                                font-weight 100
+                                padding 10px 0 12px 24px
+                                cursor text
+                            li
+                                font-size 12px
+                                font-weight 700
+                                padding 0 0 12px 24px
+                                margin-bottom 6px
+                                cursor pointer
+                                position relative
+                                span 
+                                    display block
+                                    width 26px
+                                    height 2px
+                                    background #13d4c8
+                                    position absolute
+                                    top 19px
+                                    left 24px
+                                    opacity 0
+                                    transform translateY(6px)
+                                    transition all .3s
+                                .spanline
+                                    opacity 1
+                                    transform translateY(0)
+                                    // transition opacity .3s,transform .3s
+                        .box-style02
+                            span 
+                                display inline-block
+                                color #9b9b9b
+                                font-size 12px
+                                font-weight 100
+                                padding 10px 0 14px 24px
+                            .box-eve
+                                font-size 12px
+                                padding 0 0 12px 24px
+                                width 28.2px
+                                height 14px
+                                .style02-line
+                                    display block
+                                    width 100%
+                                    height 2px
+                                    background #13d4c8
+                                    opacity 0
+                                    transform translateY(8px)
+                                    transition all 0.3s
+                            .box-eve:hover
+                                .style02-line
+                                    opacity 1
+                                    transform translateY(4px)  
                     .show
                         display block
+                    //服务
+                    .box-service
+                        position relative
+                        .service
+                            display inline-block
+                            width 66px
                         span 
                             display inline-block
-                            font-size 12px
-                        a
-                            display block
-                            text-align center
-                            font-size 12px
+                            position absolute
+                            top 5px
+                            left -20px
+                            width 7px
+                            height 7px
+                            border 1px solid #000
+                            border-width 0 1px 1px 0 
+                            transform rotateZ(45deg)
+                            transition transform .01s
+                        .up
+                            position absolute
+                            top 10px
+                            left -20px
+                            transform rotateZ(-135deg)
+                    .box-style1
+                        display inline-block
+                        width 131px
+                        height 121px
+                        border-radius 0 0 12px 12px
+                        background #fff
+                        position absolute
+                        top 42px
+                        left 0
+                        display none
+                        .box-style1-1
+                            width 100%
+                            height 103px
+                            padding-top 18px
+                            li
+                                font-size 12px
+                                font-weight 650
+                                padding 0 20px 0 20px
+                                margin-bottom 8px
+                                cursor pointer
+                                position relative
+                                a
+                                    display block
+                                    width max-content
+                                    padding-bottom 8px
+                                    span 
+                                        display block
+                                        width 100%
+                                        height 2px
+                                        background #13d4c8  
+                                        opacity 0
+                                        transform translateY(10px)
+                                        transition all .3s
+                                    .spanline
+                                        opacity 1
+                                        transform translateY(5px)
+                                        // transition opacity .3s,transform .3s
+                    .show
+                        display block
+                    //蔚来
+                    .box-weilai
+                        position relative
+                        .weilai
+                            display inline-block
+                            width 45px
+                        span 
+                            display inline-block
+                            position absolute
+                            top 5px
+                            left -20px
+                            width 7px
+                            height 7px
+                            border 1px solid #000
+                            border-width 0 1px 1px 0 
+                            transform rotateZ(45deg)
+                            transition transform .01s
+                        .up
+                            position absolute
+                            top 10px
+                            left -20px
+                            transform rotateZ(-135deg)
+                    
+                    .box-style2
+                        display inline-block
+                        width 110px
+                        height 163px
+                        border-radius 0 0 12px 12px
+                        background #fff
+                        position absolute
+                        top 42px
+                        left 0
+                        display none                    
+                        .box-style2-1
+                            width 100%
+                            height 103px
+                            padding-top 18px
+                            li
+                                font-size 12px
+                                font-weight 650
+                                padding 0 20px 0 20px
+                                margin-bottom 12px
+                                cursor pointer
+                                position relative
+                                a
+                                    display block
+                                    width max-content
+                                    padding-bottom 8px
+                                    span 
+                                        display block
+                                        width 100%
+                                        height 2px
+                                        background #13d4c8  
+                                        opacity 0
+                                        transform translateY(10px)
+                                        transition all .3s
+                                    .spanline
+                                        opacity 1
+                                        transform translateY(5px)
+                                        // transition opacity .3s,transform .3s
+                                  
+                    .show
+                        display block
+        //预约试驾
         .box-appointment
             height 40px
             width 178px
@@ -93,6 +294,8 @@ a
                 font-size 14px
                 font-weight 700
                 color #000
+                background #fff
+                transition 0.3s ease
                 width 126px
                 height 36px
                 line-height 36px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
@@ -100,5 +303,11 @@ a
                 border-radius 100px
                 padding 0 10px
                 border 2px solid #000
+        .box-appointment:hover
+            .appointment
+                color #fff
+                background #000
+                opacity 1
+            
 
                 
