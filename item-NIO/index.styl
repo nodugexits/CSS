@@ -4,7 +4,7 @@
 body,html
     width 100%
     height 100%
-    background #000
+    // background #000
 li
     list-style none
 a   
@@ -13,17 +13,20 @@ a
     font-weight 600
     font-size 12px
 .page-wrapper
+    width 100%
+    height 100%
     .header
         padding 15px 40px
         height 70px
         background #fff
         box-sizing border-box
         position relative
+        animation ani_nav 0.8s ease-in 1
         .box-logo
             width 112px
             height 40px
             display inline-block
-            position fixed
+            position absolute
             z-index 1
             .logo
                 display inline-block
@@ -100,7 +103,8 @@ a
                         position absolute
                         top 42px
                         left 0
-                        display none                    
+                        display none   
+                        z-index 1                 
                         .box-style01
                             width 90px
                             border-bottom 1px solid #9b9b9b
@@ -190,6 +194,7 @@ a
                         top 42px
                         left 0
                         display none
+                        z-index 1  
                         .box-style1-1
                             width 100%
                             height 103px
@@ -251,7 +256,8 @@ a
                         position absolute
                         top 42px
                         left 0
-                        display none                    
+                        display none  
+                        z-index 1                    
                         .box-style2-1
                             width 100%
                             height 103px
@@ -292,10 +298,10 @@ a
             .appointment
                 display inline-block
                 font-size 14px
-                font-weight 700
+                font-weight 700 
                 color #000
                 background #fff
-                transition 0.3s ease
+                // transition 0.3s ease-in
                 width 126px
                 height 36px
                 line-height 36px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
@@ -308,6 +314,298 @@ a
                 color #fff
                 background #000
                 opacity 1
-            
+     @keyframes ani_nav
+            0%
+                opacity 0
+            60%
+                opacity 0
+            100%
+                opacity 1
+    .body-pic
+        width 100%
+        line-height 0
+        .box-pic-es6
+            width 100%
+            position relative
+            background-color #000
+            .pic-es6
+                width 100%
+                animation ani_es6pic 1.5s ease-in 1
+            @keyframes ani_es6pic
+                0%
+                    opacity 0
+                40%
+                    opacity 0
+                100%
+                    opacity 1
+            .pic-logo-button-box
+                position absolute
+                top 26%
+                left 50%
+                transform translate(-50%,-50%)
+                max-width 1171px
+                // width 100%
+                .logo-button-box
+                     margin 0 auto
+                    .pic-logo-box
+                        width 288px
+                        height 113px
+                        margin 0 auto
+                        line-height 17px
+                        img 
+                            width 288px
+                            height 49px
+                            margin-bottom 16px
+                            animation ani_nio-es6pic 1.5s ease-in 1
+                        @keyframes ani_nio-es6pic
+                            0%
+                                opacity 0
+                            45%
+                                opacity 0
+                            100%
+                                opacity 1
+                        p
+                            margin 0 auto
+                            font-size 22px
+                            width 288px
+                            height 44px
+                            color #fff
+                            letter-spacing 26px
+                            text-align center
+                            font-weight 400
+                            line-height 22px
+                            animation ani_es6text 1.9s ease-in 
+
+                            // animation-delay 0.5s
+                        @keyframes ani_es6text
+                            0%
+                                opacity 0
+                                transform translateY(20px)
+                            80%
+                                opacity 0
+                                transform translateY(20px)
+                            90%
+                                opacity 0.7
+                                transform translateY(10px)
+                            100%
+                                opacity 1
+                                transform translateY(0)
+                    .pic-button-box
+                        width 449px
+                        height 50px
+                        letter-spacing 2px
+                        animation ani_es6button 1.9s ease-in
+                        // opacity 0
+                        // animation-delay 0.5s
+                        //报名试驾按钮
+                        .button-box-1
+                            float left 
+                            padding 0
+                            .button-1
+                                display inline-block
+                                font-size 16px
+                                font-weight 700 
+                                color #fff
+                                transition 0.3s ease
+                                width 186px
+                                height 46px
+                                line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                text-align center  //让文字在容器水平方向居中
+                                border-radius 100px
+                                padding 0 10px
+                                border 2px solid #fff
+                        .button-box-1:hover
+                            .button-1
+                                color #000
+                                background #fff
+                                // opacity 1
+                        //探索ES6按钮
+                        .button-box-2
+                            float right
+                            padding 0
+                            .button-2
+                                display inline-block
+                                font-size 16px
+                                font-weight 700 
+                                color #fff
+                                transition 0.3s ease
+                                width 186px
+                                height 46px
+                                line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                text-align center  //让文字在容器水平方向居中
+                                border-radius 100px
+                                padding 0 10px
+                                border 2px solid #fff
+                        .button-box-2:hover
+                            .button-2
+                                color #000
+                                background #fff
+                                // opacity 1
+                    @keyframes ani_es6button
+                        0%
+                            opacity 0
+                            transform translateY(20px)
+                        80%
+                            opacity 0
+                            transform translateY(20px)
+                        90%
+                            opacity 0.7
+                            transform translateY(10px)
+                        100%
+                            opacity 1
+                            transform translateY(0)
+        .box-pic-es8
+            width 100%
+            position relative
+            background-color #000
+            .pic-es8
+                width 100%
+                animation ani_es8pic 1.5s ease-in 1
+            @keyframes ani_es8pic
+                0%
+                    opacity 0
+                40%
+                    opacity 0
+                100%
+                    opacity 1
+            .pic-logo-button-box
+                position absolute
+                top 26%
+                left 50%
+                transform translate(-50%,-50%)
+                max-width 1171px
+                .logo-button-box
+                     margin 0 auto
+                    .pic-logo-box
+                        width 288px
+                        height 140px
+                        margin 0 auto
+                        line-height 17px
+                        img 
+                            width 288px
+                            height 49px
+                            margin-bottom 16px
+                            animation ani_nio-es8pic 1.5s ease-in 1
+                        @keyframes ani_nio-es8pic
+                            0%
+                                opacity 0
+                            45%
+                                opacity 0
+                            100%
+                                opacity 1
+                        .es8-text1
+                            margin 0 auto
+                            font-size 22px
+                            width 308px
+                            height 30px
+                            color #fff
+                            letter-spacing 22px
+                            text-align justify
+                            font-weight 400
+                            line-height 22px
+                            animation ani_es8text1 1.9s ease-in 
+                            // animation-delay 0.5s
+                        .es8-text2
+                            margin 0 auto
+                            font-size 16px
+                            width 296px
+                            height 16px
+                            color #fff
+                            letter-spacing 7px
+                            text-align justify
+                            font-weight normal
+                            line-height 22px
+                            animation ani_es8text2 1.9s ease-in 
+                            // animation-delay 0.2s
+                        @keyframes ani_es8text1
+                            0%
+                                opacity 0
+                                transform translateY(20px)
+                            80%
+                                opacity 0
+                                transform translateY(20px)
+                            90%
+                                opacity 0.7
+                                transform translateY(10px)
+                            100%
+                                opacity 1
+                                transform translateY(0)
+                        @keyframes ani_es8text2
+                            0%
+                                opacity 0
+                                transform translateY(20px)
+                            80%
+                                opacity 0
+                                transform translateY(20px)
+                            90%
+                                opacity 0.7
+                                transform translateY(10px)
+                            100%
+                                opacity 1
+                                transform translateY(0)
+                    .pic-button-box
+                        width 449px
+                        height 50px
+                        letter-spacing 2px
+                        animation ani_es8button 1.9s ease-in
+                        // opacity 0
+                        // animation-delay 0.5s
+                        //报名试驾按钮
+                        .button-box-1
+                            float left 
+                            padding 0
+                            .button-1
+                                display inline-block
+                                font-size 16px
+                                font-weight 700 
+                                color #fff
+                                transition 0.3s ease
+                                width 186px
+                                height 46px
+                                line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                text-align center  //让文字在容器水平方向居中
+                                border-radius 100px
+                                padding 0 10px
+                                border 2px solid #fff
+                        .button-box-1:hover
+                            .button-1
+                                color #000
+                                background #fff
+                                // opacity 1
+                        //探索ES6按钮
+                        .button-box-2
+                            float right
+                            padding 0
+                            .button-2
+                                display inline-block
+                                font-size 16px
+                                font-weight 700 
+                                color #fff
+                                transition 0.3s ease
+                                width 186px
+                                height 46px
+                                line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                text-align center  //让文字在容器水平方向居中
+                                border-radius 100px
+                                padding 0 10px
+                                border 2px solid #fff
+                        .button-box-2:hover
+                            .button-2
+                                color #000
+                                background #fff
+                                // opacity 1
+                    @keyframes ani_es8button
+                        0%
+                            opacity 0
+                            transform translateY(20px)
+                        80%
+                            opacity 0
+                            transform translateY(20px)
+                        90%
+                            opacity 0.7
+                            transform translateY(10px)
+                        100%
+                            opacity 1
+                            transform translateY(0)
 
                 

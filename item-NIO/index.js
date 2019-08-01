@@ -1,6 +1,6 @@
-const lineList = document.querySelectorAll('.list');  //获取 导航栏下拉框li标签  是一个数组
-const spanLine = document.querySelectorAll('.sp');  //获取 导航栏下拉框li标签下span标签  是一个数组
-const jsOption = document.querySelectorAll('.option');//获取导航栏li标签
+const lineList = document.querySelectorAll('.list');  //获取 导航栏下拉框li标签DOM  是一个数组
+const spanLine = document.querySelectorAll('.sp');  //获取 导航栏下拉框li标签下span标签DOM  是一个数组
+const jsOption = document.querySelectorAll('.option');//获取导航栏li标签DOM
 const jsI = document.querySelectorAll('.i');  //获取  箭头小标
 const jsDropdown = document.querySelectorAll('.dropdown-box');  //获取下拉框
 //用数组循环来把触发了导航栏li标签，把下标传给li标签下箭头小标和下拉框还有underline
