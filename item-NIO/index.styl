@@ -607,5 +607,563 @@ a
                         100%
                             opacity 1
                             transform translateY(0)
+        .box-pic-OS-Pilot
+            width 100%
+            height 100%
+            .box-OS-Pilot
+                width 100%
+                height 100%
+                box-sizing border-box
+                padding 20px 20px 0 20px
+                display flex
+                //Flex布局方向控制  row-reverse 表示从右向左排列 column 表示从上向下排列 column-reverse 表示从下向上排列
+                // flex-direction row //flex布局方向由左到右  
+                // flex-wrap nowrap
+                .box-pic-OS
+                    padding-right 10px  
+                    // float left 
+                    box-sizing border-box
+                    width 50%
+                    height 100%
+                    position relative    
+                    .pic-OS
+                        background-repeat no-repeat  
+                        // 以下操作是为了让img 图片等比例自动缩放的
+                        width auto
+                        height auto
+                        max-width 100%
+                        max-height 100%
+                    .pic-logo-button-box
+                        position absolute
+                        top 28%
+                        left 52%
+                        transform translate(-50%,-50%)
+                        max-width 1171px
+                        .logo-button-box
+                            margin 0 auto
+                            line-height 4
+                            .pic-logo-box
+                                width 580px
+                                height 100px
+                                margin 0 auto
+                                line-height 21px
+                                img 
+                                    width 187.7px
+                                    height 30px
+                                    margin-bottom 5px
+                                    margin-left 196px
+                                    margin-right 196px
+                                    animation ani_nio-OSpic 1.5s ease-in 1
+                                @keyframes ani_nio-OSpic
+                                    0%
+                                        opacity 0
+                                    45%
+                                        opacity 0
+                                    100%
+                                        opacity 1
+                                .OS-text1
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align justify
+                                    font-weight 300
+                                    line-height 24px
+                                    animation ani_OStext1 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                .OS-text2
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align center
+                                    font-weight 300
+                                    line-height 28px
+                                    animation ani_OStext2 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                @keyframes ani_OStext1
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                                @keyframes ani_OStext2
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                            .pic-button-box
+                                width 580px
+                                height 60px
+                                letter-spacing 2px
+                                animation ani_OSbutton 1.9s ease-in
+                                // animation-delay 0.5s
+                                //观看介绍视频按钮
+                                .button-box-1
+                                    width 210px
+                                    height 50px
+                                    margin 0 auto 
+                                    .button-1
+                                        display inline-block
+                                        font-size 16px
+                                        font-weight 700 
+                                        color #fff
+                                        transition 0.3s ease
+                                        width 186px
+                                        height 46px
+                                        line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                        text-align center  //让文字在容器水平方向居中
+                                        border-radius 100px
+                                        padding 0 10px
+                                        border 2px solid #fff
+                                .button-box-1:hover
+                                    .button-1
+                                        color #000
+                                        background #fff
+                                        // opacity 1
+                            @keyframes ani_OSbutton
+                                0%
+                                    opacity 0
+                                    transform translateY(20px)
+                                80%
+                                    opacity 0
+                                    transform translateY(20px)
+                                90%
+                                    opacity 0.7
+                                    transform translateY(10px)
+                                100%
+                                    opacity 1
+                                    transform translateY(0)
+                .box-pic-Pilot
+                    padding-left 10px
+                    // float right   
+                    box-sizing border-box
+                    width 50%
+                    height 100%     
+                    position relative
+                    .pic-Pilot
+                        background-repeat no-repeat
+                        width auto
+                        height auto
+                        max-width 100%
+                        max-height 100%
+                    .pic-logo-button-box
+                        position absolute
+                        top 28%
+                        left 52%
+                        transform translate(-50%,-50%)
+                        max-width 1171px
+                        .logo-button-box
+                            margin 0 auto
+                            line-height 4
+                            .pic-logo-box
+                                width 580px
+                                height 100px
+                                margin 0 auto
+                                line-height 21px
+                                img 
+                                    width 187.7px
+                                    height 30px
+                                    margin-bottom 5px
+                                    margin-left 196px
+                                    margin-right 196px
+                                    animation ani_nio-Pilotpic 1.5s ease-in 1
+                                @keyframes ani_nio-Pilotpic
+                                    0%
+                                        opacity 0
+                                    45%
+                                        opacity 0
+                                    100%
+                                        opacity 1
+                                .Pilot-text1
+                                    margin 0 auto
+                                    font-size 22px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align justify
+                                    font-weight 400
+                                    line-height 24px
+                                    animation ani_OStext1 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                .Pilot-text2
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align center
+                                    font-weight 300
+                                    line-height 34px
+                                    animation ani_OStext2 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                @keyframes ani_Pilottext1
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                                @keyframes ani_Pilottext2
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                            .pic-button-box
+                                width 580px
+                                height 60px
+                                letter-spacing 2px
+                                animation ani_Pilotbutton 1.9s ease-in
+                                // animation-delay 0.5s
+                                //报名试驾按钮
+                                .button-box-1
+                                    width 210px
+                                    height 50px
+                                    margin 0 auto 
+                                    .button-1
+                                        display inline-block
+                                        font-size 16px
+                                        font-weight 700 
+                                        color #fff
+                                        transition 0.3s ease
+                                        width 186px
+                                        height 46px
+                                        line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                        text-align center  //让文字在容器水平方向居中
+                                        border-radius 100px
+                                        padding 0 10px
+                                        border 2px solid #fff
+                                .button-box-1:hover
+                                    .button-1
+                                        color #000
+                                        background #fff
+                                        // opacity 1
+                            @keyframes ani_Pilotbutton
+                                0%
+                                    opacity 0
+                                    transform translateY(20px)
+                                80%
+                                    opacity 0
+                                    transform translateY(20px)
+                                90%
+                                    opacity 0.7
+                                    transform translateY(10px)
+                                100%
+                                    opacity 1
+                                    transform translateY(0)
+        .box-pic-House-Power
+            .box-House-Power
+                width 100%
+                height 100%
+                box-sizing border-box
+                padding 20px 20px 0 20px
+                display flex
+                //Flex布局方向控制  row-reverse 表示从右向左排列 column 表示从上向下排列 column-reverse 表示从下向上排列
+                // flex-direction row //flex布局方向由左到右  
+                // flex-wrap nowrap
+                .box-pic-House
+                    padding-right 10px  
+                    // float left 
+                    box-sizing border-box
+                    width 50%
+                    height 100%
+                    position relative    
+                    .pic-House
+                        background-repeat no-repeat  
+                        // 以下操作是为了让img 图片等比例自动缩放的
+                        width auto
+                        height auto
+                        max-width 100%
+                        max-height 100%
+                    .pic-logo-button-box
+                        position absolute
+                        top 28%
+                        left 52%
+                        transform translate(-50%,-50%)
+                        max-width 1171px
+                        .logo-button-box
+                            margin 0 auto
+                            line-height 4
+                            .pic-logo-box
+                                width 580px
+                                height 100px
+                                margin 0 auto
+                                line-height 21px
+                                img 
+                                    width 187.7px
+                                    height 30px
+                                    margin-bottom 5px
+                                    margin-left 196px
+                                    margin-right 196px
+                                    animation ani_nio-Housepic 1.5s ease-in 1
+                                @keyframes ani_nio-Housepic
+                                    0%
+                                        opacity 0
+                                    45%
+                                        opacity 0
+                                    100%
+                                        opacity 1
+                                .House-text1
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align justify
+                                    font-weight 300
+                                    line-height 24px
+                                    animation ani_Housetext1 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                .House-text2
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align center
+                                    font-weight 300
+                                    line-height 28px
+                                    animation ani_Housetext2 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                @keyframes ani_Housetext1
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                                @keyframes ani_Housetext2
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                            .pic-button-box
+                                width 580px
+                                height 60px
+                                letter-spacing 2px
+                                animation ani_Housebutton 1.9s ease-in
+                                // animation-delay 0.5s
+                                //观看介绍视频按钮
+                                .button-box-1
+                                    width 210px
+                                    height 50px
+                                    margin 0 auto 
+                                    .button-1
+                                        display inline-block
+                                        font-size 16px
+                                        font-weight 700 
+                                        color #fff
+                                        transition 0.3s ease
+                                        width 186px
+                                        height 46px
+                                        line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                        text-align center  //让文字在容器水平方向居中
+                                        border-radius 100px
+                                        padding 0 10px
+                                        border 2px solid #fff
+                                .button-box-1:hover
+                                    .button-1
+                                        color #000
+                                        background #fff
+                                        // opacity 1
+                            @keyframes ani_Housebutton
+                                0%
+                                    opacity 0
+                                    transform translateY(20px)
+                                80%
+                                    opacity 0
+                                    transform translateY(20px)
+                                90%
+                                    opacity 0.7
+                                    transform translateY(10px)
+                                100%
+                                    opacity 1
+                                    transform translateY(0)
+                .box-pic-Power
+                    padding-left 10px
+                    // float right   
+                    box-sizing border-box
+                    width 50%
+                    height 100%     
+                    position relative
+                    .pic-Power
+                        background-repeat no-repeat
+                        width auto
+                        height auto
+                        max-width 100%
+                        max-height 100%
+                    .pic-logo-button-box
+                        position absolute
+                        top 28%
+                        left 52%
+                        transform translate(-50%,-50%)
+                        max-width 1171px
+                        .logo-button-box
+                            margin 0 auto
+                            line-height 4
+                            .pic-logo-box
+                                width 580px
+                                height 100px
+                                margin 0 auto
+                                line-height 21px
+                                img 
+                                    width 187.7px
+                                    height 30px
+                                    margin-bottom 5px
+                                    margin-left 196px
+                                    margin-right 196px
+                                    animation ani_nio-Powerpic 1.5s ease-in 1
+                                @keyframes ani_nio-Powerpic
+                                    0%
+                                        opacity 0
+                                    45%
+                                        opacity 0
+                                    100%
+                                        opacity 1
+                                .Power-text1
+                                    margin 0 auto
+                                    font-size 22px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align justify
+                                    font-weight 400
+                                    line-height 24px
+                                    animation ani_OStext1 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                .Power-text2
+                                    margin 0 auto
+                                    font-size 16px
+                                    width 225px
+                                    height 24px
+                                    color #fff
+                                    // letter-spacing 22px
+                                    text-align center
+                                    font-weight 300
+                                    line-height 34px
+                                    animation ani_OStext2 1.9s ease-in 
+                                    // animation-delay 0.5s
+                                @keyframes ani_Powertext1
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                                @keyframes ani_Powertext2
+                                    0%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    80%
+                                        opacity 0
+                                        transform translateY(20px)
+                                    90%
+                                        opacity 0.7
+                                        transform translateY(10px)
+                                    100%
+                                        opacity 1
+                                        transform translateY(0)
+                            .pic-button-box
+                                width 580px
+                                height 60px
+                                letter-spacing 2px
+                                animation ani_Powerbutton 1.9s ease-in
+                                // animation-delay 0.5s
+                                //报名试驾按钮
+                                .button-box-1
+                                    width 210px
+                                    height 50px
+                                    margin 0 auto 
+                                    .button-1
+                                        display inline-block
+                                        font-size 16px
+                                        font-weight 700 
+                                        color #fff
+                                        transition 0.3s ease
+                                        width 186px
+                                        height 46px
+                                        line-height 46px  //让文字在容器垂直方向居中    可以设置行高对于容器高度
+                                        text-align center  //让文字在容器水平方向居中
+                                        border-radius 100px
+                                        padding 0 10px
+                                        border 2px solid #fff
+                                .button-box-1:hover
+                                    .button-1
+                                        color #000
+                                        background #fff
+                                        // opacity 1
+                            @keyframes ani_Powerbutton
+                                0%
+                                    opacity 0
+                                    transform translateY(20px)
+                                80%
+                                    opacity 0
+                                    transform translateY(20px)
+                                90%
+                                    opacity 0.7
+                                    transform translateY(10px)
+                                100%
+                                    opacity 1
+                                    transform translateY(0)
+
+
 
                 
