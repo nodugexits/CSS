@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <form action="/login" method="POST" name="loginForm">
+        <!-- 词汇量 -->
+        <div class="form-group">
+            <label for="emailInput">Email Address</label>
+            <input type="email" id="emailInput" name="emailInput" placeholder="请输入邮箱"
+             class="form-control" required pattern="^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[0-9a-zA-Z]+$"><!--required  提示必填字段-->
+<!--pattern="^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[0-9a-zA-Z]+$"  正则表达式验证输入框内格式是否正确-->
+        </div>
+        <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <input type="password" id="passwordInput" name="passwordInput" placeholder="请输入密码" 
+            class="form-control" required minlength="6" maxlength="12">
+            <!--minlength="6" maxlength="12"  输入框内最小长度和最大长度提示-->
+        </div>
+        <div class="form-group">
+            <label for="fileInput">File Input</label>
+            <input type="file" id="fileInput" name="fileInput">
+            <p class="help-block">
+                Example block-level help text here.
+            </p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button class="btn btn-default">Submit</button>
+    </form>
+</body>
+
+</html>
