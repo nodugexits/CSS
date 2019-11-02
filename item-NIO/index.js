@@ -115,7 +115,6 @@ for (var j = 0; j < len; j++) {
     //当触及小圆点是高亮
     jsCir[j].onclick = function () {
         clearInterval(jsImg.timer)//每次运行该函数必须清除之前的定时器！
-        this.className = 'active';//给当前点击的圆点高亮
         var i = this.index;  //将当前圆点的index索引值传给i
         var e = this.index;
         autoRun(i, this.index, e)  //传入实参i，this.index，调用自动轮播函数autoRun()
